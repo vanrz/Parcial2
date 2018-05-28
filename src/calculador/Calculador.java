@@ -9,7 +9,7 @@ package calculador;
  *
  * @author Estudiantes
  */
-abstract public class Calculador implements lCalculador {
+public class Calculador implements lCalculador {
 
     
     
@@ -22,19 +22,19 @@ abstract public class Calculador implements lCalculador {
         
         
         
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
     }
 
     @Override
     public double calcularArea() {
         int dx=(punto2.getX()-punto1.getX())*punto1.getY();
         
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
     }
 
     @Override
     public double calcularPendiente() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+       
     }
     
    }
