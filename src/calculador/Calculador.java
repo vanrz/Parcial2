@@ -5,6 +5,9 @@
  */
 package calculador;
 
+import static java.lang.Math.pow;
+import static java.lang.Math.sqrt;
+
 /**
  *
  * @author Estudiantes
@@ -19,7 +22,11 @@ public class Calculador implements lCalculador {
     
      @Override
     public double calcularDistancia() {
+        double a=0;
         
+        a = sqrt(pow(punto2.getY()-punto1.getY() ,2) + pow(punto2.getX()-punto1.getX(),2));
+        
+        return a;
         
         
         
@@ -27,14 +34,19 @@ public class Calculador implements lCalculador {
 
     @Override
     public double calcularArea() {
-        int dx=(punto2.getX()-punto1.getX())*punto1.getY();
-        
+        double c=0;
+        double d=0;
+        c = (punto1.getY()*punto1.getX());
+        d =((punto2.getY()-punto1.getY())*(punto2.getX()-punto1.getX()));
+        return c+(d/2);
         
     }
 
     @Override
     public double calcularPendiente() {
-       
+       double p=0;
+        p = (punto2.getY() - punto1.getY()/punto2.getX() - punto1.getX());
+        return p;
     }
     
    }

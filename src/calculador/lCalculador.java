@@ -11,7 +11,7 @@ package calculador;
  */
  public interface lCalculador {
     
-     public double calcularDistancia();
+    public double calcularDistancia();
     public double calcularArea();
     public double calcularPendiente();
     
