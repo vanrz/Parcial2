@@ -13,10 +13,7 @@ public class Punto {
     private int x;
     private int y;
     
-    public Punto (double x, double y){
-    this.x=(int) x;
-    this.y=(int) y;
-    }
+   
     
      public void setX( int n) {
         this.x = n;
@@ -34,12 +31,12 @@ public class Punto {
         return y;
     }
 
-    public double getPunto() {
+    public double getPoint() {
         double Punto = 0;
         return Punto;
     }
     
-    public void setPunto(int n, int m) {
+    public void setPoint(int n, int m) {
         this.x=n;
         this.y=m;
         
